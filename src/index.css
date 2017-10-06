@@ -1,6 +1,10 @@
 body {
     margin: 0;
   }
+
+  .router {
+    width: 100%;
+  }
   
   .open-sans {
     font-family: 'Open Sans', sans-serif;

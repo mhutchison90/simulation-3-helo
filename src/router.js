@@ -7,7 +7,7 @@ import Profile from './components/Profile/Profile';
 import Search from './components/Search/Search'; 
 
 export default (
-    <div>
+    <div className="router">
         <Switch>
             <Route component={Login} exact path='/' />
             <Route component={Dashboard} path='/dashboard' />
