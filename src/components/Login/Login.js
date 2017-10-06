@@ -37,7 +37,7 @@ export default class Login extends Component {
           <div className="Auth__link_container">
 
 
-              <a href='http://localhost:3005/auth' className='loginBtn'><button>Login Auth0</button></a>
+              <a href='http://localhost:3005/auth'><button  className='loginBtn'>Login Auth0</button></a>
               <NavLink activeClassName='Auth__auth0_link open-sans' exact to='/dashboard'><button  className='loginBtn'>Login</button></NavLink>
 
 
