@@ -1,5 +1,8 @@
 // --IMPORTS--
 require('dotenv').config();
+
+const controller = require('./controller')
+
 const express = require('express')
     , session = require('express-session')
     , bodyParser = require('body-parser')
