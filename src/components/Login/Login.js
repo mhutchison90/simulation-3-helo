@@ -28,13 +28,13 @@ export default class Login extends Component {
       <div className="Auth__parent_container pink-to-green-gradient">
         <div className="Auth__child_container orange-to-yellow-gradient">
           <div className="Auth__logo_container">
-            {<img className="Auth__logo_img" src={ logo } alt="logo" />}
+            {<img className="Auth__logo_img" src={logo} alt="logo" />}
             <div className="Auth__logo_text open-sans-bold">Helo</div>
           </div>
 
           <div className="Auth__link_container">
             <div className="Auth__auth0_div open-sans black-bgc">
-              {/* <a className="Auth__auth0_link open-sans" href={ `${ url }` }>Login / Register</a> */}
+              <a href={process.env.REACT_APP_LOGIN}><button>Login Auth0</button></a>
               <NavLink activeClassName='Auth__auth0_link open-sans' exact to='/dashboard'><button>Login</button></NavLink>
 
 
