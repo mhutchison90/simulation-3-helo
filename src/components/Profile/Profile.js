@@ -8,6 +8,7 @@ export default class Profile extends Component {
         return (
             <div className='App'>
                 <Nav />
+                <div className='profile'>
                 <h2>Profile Page</h2>
                 <div className='profile-tile'>
                     <button>Update</button>
@@ -95,6 +96,7 @@ export default class Profile extends Component {
                     </select>
                     Birthday Year <input type='text' />
 
+                </div>
                 </div>
             </div>
         )

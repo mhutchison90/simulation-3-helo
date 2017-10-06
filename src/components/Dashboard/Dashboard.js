@@ -9,6 +9,7 @@ class Dashboard extends Component {
         return (
             <div className="dashboard-container" >
                 <Nav />
+                <div className="dash">
                 <h2>Dashboard Page</h2>
                 <div className='profile-tile-container'>
                     <div className='user-info'>image and user name</div>
@@ -30,6 +31,7 @@ class Dashboard extends Component {
                             <option>Birthday</option>
                         </select>
                     </div>
+                </div>
                 </div>
             </div>
         )

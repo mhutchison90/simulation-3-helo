@@ -1,9 +1,37 @@
-ul{
-    list-style: none;
-    display:flex;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700,800');
+
+.nav-bar {
+    background: linear-gradient(97deg, #ff7a6e, #ff9770);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1), 0 6px 6px 0 rgba(0,0,0,0.2);
+    color: white;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: stretch;
+    font-family: 'Open Sans', sans-serif;
 }
 
-li{
-    padding: 0 15px;
+.home-search {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: stretch;
 }
+
+.helo {
+    font-family: 'Open Sans:800', sans-serif;
+    font-size: 50px
+}
+
+.logout {
+    color: white;
+    text-decoration: none;
+}
+
+
+
 
