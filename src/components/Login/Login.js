@@ -24,6 +24,8 @@ import logo from './helo-logo.png';
 
 export default class Login extends Component {
   render() {
+    console.log(process.env)
+    
     return (
       <div className="Auth__parent_container pink-to-green-gradient">
         <div className="Auth__child_container orange-to-yellow-gradient">
@@ -34,7 +36,7 @@ export default class Login extends Component {
 
           <div className="Auth__link_container">
             <div className="Auth__auth0_div open-sans black-bgc">
-              <a href={process.env.REACT_APP_LOGIN}><button>Login Auth0</button></a>
+              <a href='http://localhost:3005/auth'><button>Login Auth0</button></a>
               <NavLink activeClassName='Auth__auth0_link open-sans' exact to='/dashboard'><button>Login</button></NavLink>
 
 
