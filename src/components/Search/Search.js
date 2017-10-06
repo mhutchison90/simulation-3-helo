@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './Search.css';
+import Nav from '../Nav/Nav';
 
 
 export default class Search extends Component {
     render() {
         return (
-            <div className='App'>  
-                {/* <img src={logo} alt=""/> */}
-                <a href={ process.env.REACT_APP_Search }><button>Search</button></a>
+            <div className='App'> 
+                <Nav /> 
+                 <h2>Search Page</h2> 
             </div> 
         )
     }

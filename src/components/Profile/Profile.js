@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './Profile.css';
+import Nav from '../Nav/Nav';
 
 
 export default class Profile extends Component {
     render() {
         return (
-            <div className='App'>  
-                {/* <img src={logo} alt=""/> */}
-                <a href={ process.env.REACT_APP_Profile }><button>Profile</button></a>
+            <div className='App'> 
+                <Nav/> 
+                 <h2>Profile Page</h2> 
             </div> 
         )
     }
