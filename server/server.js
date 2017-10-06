@@ -26,6 +26,8 @@ app.use(passport.session());
 // --MASSIVE--
 massive(process.env.CONNECTION_STRING).then(db => {
     app.set('db', db);
+    //console.log(db)
+    
 })
 
 passport.use(new Auth0Strategy({
@@ -36,13 +38,15 @@ passport.use(new Auth0Strategy({
 }, function (accessToken, refreshToken, extraParams, profile, done) {
     // will make db calls here in the future
     const db = app.get('db')
-
+   
     db.find_user([profile.identities[0].user_id]).then(user => {
         if (user[0]) {
             return done(null, user[0].id)
         } else {
             const user = profile._json;
-            db.create_user([user.name, user.email, user.picture, user.identities[0].user_id]).then(user => {
+            //console.log(user)
+            db.create_user([user.identities[0].user_id]).then(user => {
+                //console.log(user[0].id)
                 return done(null, user[0].id)
             })
         }
