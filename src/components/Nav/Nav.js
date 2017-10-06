@@ -13,7 +13,7 @@ class Nav extends Component {
             <div>
                 <ul>
                     <li><NavLink activeClassName='active' to='/dashboard'>Dashboard</NavLink></li>
-                    <li><NavLink activeClassName='active' to='/profile'>Profile</NavLink></li>
+                    {/* <li><NavLink activeClassName='active' to='/profile'>Profile</NavLink></li> */}
                     <li><NavLink activeClassName='active' to='/search'>Search</NavLink></li>
                     <li><NavLink activeClassName='active' to='/'>Logout</NavLink></li>
                 </ul>
